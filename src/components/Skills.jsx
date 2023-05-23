@@ -46,7 +46,7 @@ const Skills = () => {
                   <ion-icon name={skill.logo}></ion-icon>
                 </div>
               </div>
-              <p className="text-xl mt-3">{skill.level}</p>
+              {/* <p className="text-xl mt-3">{skill.level}</p> */}
             </div>
           ))}
         </div>
