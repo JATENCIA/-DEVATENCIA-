@@ -74,35 +74,39 @@ const Project = () => {
             modules={[Pagination, Autoplay]}>
             {projects.map((project_info, i) => (
               <SwiperSlide key={i}>
-                <div className='h-fit w-full p-4 bg-slate-700 rounded-xl'>
+                <div className='h-[335px] w-full p-4 bg-slate-700 rounded-xl '>
                   <img
                     src={project_info.img}
                     alt=''
-                    className='rounded-lg w-[350px] h-[180px]'
+                    className='rounded-lg w-[350px] h-[190px] mx-auto'
                   />
                   <h3 className='text-xl my-4 text-center'>
                     {project_info.name}
                   </h3>
-                  <div className='flex gap-3 place-content-center'>
-                    <a
-                      href={project_info.github_link}
-                      target='_blank'
-                      className='text-cyan-600 bg-gray-800 px-2 py-1 inline-block hover:bg-gray-900 rounded-lg transition'>
-                      Github
-                    </a>
-                    <a
-                      href={project_info.live_link}
-                      target='_blank'
-                      className='text-cyan-600 bg-gray-800 px-2 py-1 inline-block hover:bg-gray-900 rounded-lg transition'>
-                      Live Demo
-                    </a>
+                  <div
+                    className='flex w-full justify-between place-content-center              
+                  absolute'>
+                    <div className='flex gap-4 w-[190px] mx-auto '>
+                      <a
+                        href={project_info.github_link}
+                        target='_blank'
+                        className='text-cyan-600 bg-gray-800 px-2 py-1 inline-block hover:bg-gray-900 rounded-lg transition'>
+                        Github
+                      </a>
+                      <a
+                        href={project_info.live_link}
+                        target='_blank'
+                        className='text-cyan-600 bg-gray-800 px-2 py-1 inline-block hover:bg-gray-900 rounded-lg transition'>
+                        Live Demo
+                      </a>
+                    </div>
                   </div>
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
-        <div className='lg:block hidden'>
+        <div className='lg:block hidden '>
           <img src={project_person} alt='' />
         </div>
       </div>
