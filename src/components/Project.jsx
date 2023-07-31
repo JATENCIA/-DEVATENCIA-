@@ -5,6 +5,7 @@ import project2 from '../assets/images/project-2.png'
 import project3 from '../assets/images/project-3.png'
 import project4 from '../assets/images/project-4.png'
 import project5 from '../assets/images/project-5.png'
+import project6 from '../assets/images/project-6.png'
 import project_person from '../assets/images/naruto5.png'
 import 'swiper/css'
 import 'swiper/css/pagination'
@@ -28,19 +29,25 @@ const Project = () => {
       img: project3,
       name: 'News Home Page',
       github_link: 'https://github.com/JATENCIA/NewsHomePage',
-      live_link: 'https://glowing-selkie-9938fc.netlify.app/'
+      live_link: 'https://news-home-page-five.vercel.app/'
     },
     {
       img: project4,
       name: 'Sunnyside Agency',
       github_link: 'https://github.com/JATENCIA/sunnysideAgency',
-      live_link: 'https://taupe-druid-93b500.netlify.app/'
+      live_link: 'https://sunnyside-agency-iota-three.vercel.app/'
     },
     {
       img: project5,
       name: 'Home Land',
       github_link: 'https://github.com/JATENCIA/HomeLand',
-      live_link: 'https://leafy-yeot-78aab0.netlify.app/'
+      live_link: 'https://home-land-zeta.vercel.app/'
+    },
+    {
+      img: project6,
+      name: 'Books',
+      github_link: 'https://github.com/JATENCIA/TechnicalTestBooks',
+      live_link: 'https://technical-test-books-qq9k.vercel.app/'
     }
   ]
   return (
